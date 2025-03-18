@@ -42,6 +42,8 @@ namespace SİgnalR.DataAccsessLayer.Repositories
         public void Update(T entity)
         {
             _context.Update(entity);
+            _context.SaveChanges();
+        
         }
     }
 }

@@ -37,29 +37,39 @@ namespace SignalRApi.Controllers
             _bookingService.TAdd(booking);
             return Ok("Rezarvasyon Yapıldı");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteBooking(int id)
         {
             var value = _bookingService.TGetByID(id);
             _bookingService.TDelete(value);
             return Ok("Rezarvasyon Silindi");
         }
-        [HttpPut]
-        public IActionResult UpdateBooking(UpdateBookingDto updateBookingDto)
+        [HttpPut("{id}")]
+        public IActionResult UpdateBooking(int id, [FromBody] UpdateBookingDto updateBookingDto)
         {
-            Booking booking = new Booking()
+            var booking = _bookingService.TGetByID(id);
+
+            if (booking == null)
             {
-                Mail = updateBookingDto.Mail,
-                BookingID = updateBookingDto.BookingID,
-                Date = updateBookingDto.Date,
-                Name = updateBookingDto.Name,
-                PersonCount = updateBookingDto.PersonCount,
-                Phone = updateBookingDto.Phone
-            };
+                return NotFound("Güncellenecek rezervasyon bulunamadı.");
+            }
+
+            Console.WriteLine($"Önce: {booking.Name}, {booking.PersonCount}, {booking.Date}");
+
+            booking.Mail = updateBookingDto.Mail;
+            booking.Date = updateBookingDto.Date;
+            booking.Name = updateBookingDto.Name;
+            booking.PersonCount = updateBookingDto.PersonCount;
+            booking.Phone = updateBookingDto.Phone;
+
             _bookingService.TUpdate(booking);
-            return Ok("Rezarvasyon Güncellendi");
+
+ 
+            Console.WriteLine($"Sonra: {booking.Name}, {booking.PersonCount}, {booking.Date}");
+
+            return Ok("Rezervasyon Güncellendi");
         }
-        [HttpGet("GetBooking")]
+        [HttpGet("{id}")]
         public IActionResult Getbooking(int id)
         {
             var value = _bookingService.TGetByID(id);

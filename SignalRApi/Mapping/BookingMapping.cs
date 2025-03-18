@@ -8,10 +8,10 @@ namespace SignalRApi.Mapping
     {
         public BookingMapping()
         {
-            CreateMap<Booking, getbookingDto>().ReverseMap();
+            CreateMap<Booking, GetBookingDto>().ReverseMap();
             CreateMap<Booking, CreateBookingDto>().ReverseMap();
             CreateMap<Booking, UpdateBookingDto>().ReverseMap();
-            CreateMap<Booking, getbookingDto>().ReverseMap();
+            CreateMap<Booking, GetBookingDto>().ReverseMap();
         }
     }
 }

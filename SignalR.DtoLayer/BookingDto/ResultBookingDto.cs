@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SignalR.DtoLayer.BookingDto
 {
-   public class getbookingDto
+   public class ResultBookingDto
     {
         public int BookingID { get; set; }
         public string Name { get; set; }

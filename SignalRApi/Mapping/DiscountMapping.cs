@@ -8,7 +8,7 @@ namespace SignalRApi.Mapping
     {
         public DiscountMapping()
         {
-            CreateMap<Discount, ResaultDiscountDto>().ReverseMap();
+            CreateMap<Discount, ResultDiscountDto>().ReverseMap();
             CreateMap<Discount, UpdateDiscountDto>().ReverseMap();
             CreateMap<Discount, GetDiscountDto>().ReverseMap();
             CreateMap<Discount, CreateDiscountDto>().ReverseMap();

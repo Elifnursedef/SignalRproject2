@@ -35,7 +35,7 @@ namespace SignalRApi.Controllers
             _aboutService.TAdd(about);
             return Ok("Hakkımda Kısmı Başarılı Bir Şekilde Eklendi");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         
         public IActionResult DeleteAbout(int id)
         {
@@ -43,19 +43,24 @@ namespace SignalRApi.Controllers
             _aboutService.TDelete(value);
             return Ok("Hakkımda Alanı Silindi");
         }
-        [HttpPut]
-        public IActionResult UpdateAbout(UpdateAboutDto updateAboutDto)
+        [HttpPut("{id}")]
+        public IActionResult UpdateAbout(int id, [FromBody] UpdateAboutDto updateAboutDto)
         {
-            About about = new About()
+            var about = _aboutService.TGetByID(id);
+
+            if (about == null)
             {
-                Title = updateAboutDto.Title,
-                Description = updateAboutDto.Description,
-                ImageUrl = updateAboutDto.ImageUrl
-            };
+                return NotFound("Güncellenecek kayıt bulunamadı.");
+            }
+
+            // Mevcut kaydın verilerini güncelle
+            about.Title = updateAboutDto.Title;
+            about.Description = updateAboutDto.Description;
+            about.ImageUrl = updateAboutDto.ImageUrl;
             _aboutService.TUpdate(about);
             return Ok("Hakkımda Alanı Güncellendi");
         }
-        [HttpGet("GetAbout")]
+        [HttpGet("{id}")]
         public IActionResult GetAbout(int id)
         {
             var value = _aboutService.TGetByID(id);

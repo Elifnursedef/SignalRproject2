@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SignalR.DtoLayer.DiscountDto
+namespace SİgnalRwebUI.Dtos.AboutDtos
 {
-   public class ResaultDiscountDto
+    public class CreateAboutDto
     {
-        public int DiscountID { get; set; }
-        public string Title { get; set; }
-        public string Amount { get; set; }
-        public string Description { get; set; }
         public string ImageUrl { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
     }
 }

@@ -9,7 +9,17 @@ using System.Reflection;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<SignalRContext>();
-builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+builder.Services.AddAutoMapper(
+    typeof(AboutMapping),
+    typeof(BookingMapping),
+    typeof(CategoryMapping),
+    typeof(ContactMapping),
+    typeof(DiscountMapping),
+    typeof(FeatureMapping),
+    typeof(ProductMapping),
+    typeof(SocialMediaMapping),
+    typeof(TestimonialMapping)
+);
 
 builder.Services.AddScoped<IAboutService, AboutManager>();
 builder.Services.AddScoped<IAboutDal, EfAboutDal>();

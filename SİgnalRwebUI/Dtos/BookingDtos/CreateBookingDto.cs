@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SignalR.DtoLayer.ContactDto
+namespace SİgnalRwebUI.Dtos.BookingDtos
 {
-    public class ResaultContactDto
+    public class CreateBookingDto
     {
-        public int ContactID { get; set; }
-        public string Location { get; set; }
+        public string Name { get; set; }
         public string Phone { get; set; }
         public string Mail { get; set; }
-        public string FooterDescription { get; set; }
+        public int PersonCount { get; set; }
+        public DateTime Date { get; set; }
     }
 }

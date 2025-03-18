@@ -25,7 +25,7 @@ namespace SignalRApi.Controllers
         [HttpGet]
         public IActionResult FeatureList()
         {
-            var value = _mapper.Map<List<ResaultFeatureDto>>(_featureService.TGetListAll());
+            var value = _mapper.Map<List<ResultFeatureDto>>(_featureService.TGetListAll());
             return Ok(value);
         }
         [HttpPost]
