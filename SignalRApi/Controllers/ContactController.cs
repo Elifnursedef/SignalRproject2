@@ -41,7 +41,7 @@ namespace SignalRApi.Controllers
             });
             return Ok("İletişim Bilgisi Eklendi");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
 
         public IActionResult DeleteContact(int id)
         {
@@ -49,7 +49,7 @@ namespace SignalRApi.Controllers
             _contactService.TDelete(value);
             return Ok("İletişim Bilgisi Silindi");
         }
-        [HttpGet("GetContact")]
+        [HttpGet("{id}")]
 
         public IActionResult GetContact(int id)
         {
@@ -58,7 +58,7 @@ namespace SignalRApi.Controllers
         }
         [HttpPut]
 
-        public IActionResult UpdateContacct(UpdateContactDto updateContactDto)
+        public IActionResult UpdateContact(UpdateContactDto updateContactDto)
         {
             _contactService.TUpdate(new Contact()
             {
