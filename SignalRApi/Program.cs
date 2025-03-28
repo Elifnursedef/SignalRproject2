@@ -3,10 +3,23 @@ using SignalR.BusinessLayer.Concerte;
 using SÝgnalR.DataAccsessLayer.Abstract;
 using SÝgnalR.DataAccsessLayer.Concrete;
 using SÝgnalR.DataAccsessLayer.EntityFramework;
+using SignalRApi.Hubs;
 using SignalRApi.Mapping;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("CorsPolicy", builder =>
+    {
+        builder.AllowAnyHeader()
+        .AllowAnyMethod()
+        .SetIsOriginAllowed((host) => true)
+        .AllowCredentials();
+    });
+});
+builder.Services.AddSignalR();
 
 builder.Services.AddDbContext<SignalRContext>();
 builder.Services.AddAutoMapper(
@@ -62,10 +75,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.MapHub<SignalRHub>("/signalrhub");
 app.MapControllers();
 
 app.Run();
+
+//localhost://1234/swagger/category/index
+//localhost://1234/signalrhub
+
