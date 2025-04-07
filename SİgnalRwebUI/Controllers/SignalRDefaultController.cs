@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace SİgnalRwebUI.Controllers
+namespace SignalRwebUI.Controllers
 {
     public class SignalRDefaultController : Controller
     {

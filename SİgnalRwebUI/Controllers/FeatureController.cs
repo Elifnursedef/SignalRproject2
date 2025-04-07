@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using SİgnalRwebUI.Dtos.FeatureDtos;
+using SignalRwebUI.Dtos.FeatureDtos;
 using System.Text;
 
-namespace SİgnalRwebUI.Controllers
+namespace SignalRwebUI.Controllers
 {
     public class FeatureController : Controller
     {

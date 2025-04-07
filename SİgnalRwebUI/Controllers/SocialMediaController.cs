@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using SİgnalRwebUI.Dtos.SocialMediaDtos;
+using SignalRwebUI.Dtos.SocialMediaDtos;
 using System.Text;
 
-namespace SİgnalRwebUI.Controllers
+namespace SignalRwebUI.Controllers
 {
     public class SocialMediaController : Controller
     {

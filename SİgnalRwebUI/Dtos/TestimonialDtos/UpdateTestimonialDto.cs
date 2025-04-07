@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SİgnalRwebUI.Dtos.TestimonialDtos
+namespace SignalRwebUI.Dtos.TestimonialDtos
 {
   public  class UpdateTestimonialDto
     {

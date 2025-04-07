@@ -1,8 +1,8 @@
 using SignalR.BusinessLayer.Abstract;
 using SignalR.BusinessLayer.Concerte;
-using SÝgnalR.DataAccsessLayer.Abstract;
-using SÝgnalR.DataAccsessLayer.Concrete;
-using SÝgnalR.DataAccsessLayer.EntityFramework;
+using SignalR.DataAccsessLayer.Abstract;
+using SignalR.DataAccsessLayer.Concrete;
+using SignalR.DataAccsessLayer.EntityFramework;
 using SignalRApi.Hubs;
 using SignalRApi.Mapping;
 using System.Reflection;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SİgnalR.DataAccsessLayer.Abstract
+namespace SignalR.DataAccsessLayer.Abstract
 {
     public interface IGenericDal<T>  where T : class
     {

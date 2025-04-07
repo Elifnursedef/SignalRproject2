@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using SİgnalRwebUI.Dtos.AboutDtos;
-using SİgnalRwebUI.Dtos.ContactDtos;
+using SignalRwebUI.Dtos.AboutDtos;
+using SignalRwebUI.Dtos.ContactDtos;
 using System.Text;
 
-namespace SİgnalRwebUI.Controllers
+namespace SignalRwebUI.Controllers
 {
     public class ContactController : Controller
     {

@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SİgnalR.DataAccsessLayer.Concrete;
+using SignalR.DataAccsessLayer.Concrete;
 
 #nullable disable
 
-namespace SİgnalR.DataAccsessLayer.Migrations
+namespace SignalR.DataAccsessLayer.Migrations
 {
     [DbContext(typeof(SignalRContext))]
     [Migration("20250218123744_initialize")]

@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using SİgnalRwebUI.Dtos.CategoryDtos;
+using SignalRwebUI.Dtos.CategoryDtos;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SİgnalRwebUI.Controllers
+namespace SignalRwebUI.Controllers
 {
     public class CategoryController : Controller
     {

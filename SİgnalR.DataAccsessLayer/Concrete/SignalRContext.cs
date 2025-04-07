@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SİgnalR.DataAccsessLayer.Concrete
+namespace SignalR.DataAccsessLayer.Concrete
 {
    public class SignalRContext:DbContext
     {

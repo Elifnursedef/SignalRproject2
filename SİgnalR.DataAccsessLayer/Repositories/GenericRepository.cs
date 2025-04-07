@@ -1,12 +1,12 @@
-﻿using SİgnalR.DataAccsessLayer.Abstract;
-using SİgnalR.DataAccsessLayer.Concrete;
+﻿using SignalR.DataAccsessLayer.Abstract;
+using SignalR.DataAccsessLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SİgnalR.DataAccsessLayer.Repositories
+namespace SignalR.DataAccsessLayer.Repositories
 {
     public class GenericRepository<T> : IGenericDal<T> where T : class
     {

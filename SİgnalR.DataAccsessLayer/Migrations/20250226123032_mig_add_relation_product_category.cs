@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace SİgnalR.DataAccsessLayer.Migrations
+namespace SignalR.DataAccsessLayer.Migrations
 {
     /// <inheritdoc />
     public partial class mig_add_relation_product_category : Migration

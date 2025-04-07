@@ -1,6 +1,6 @@
 ﻿using SignalR.BusinessLayer.Abstract;
 using SignalR.EntiyLAyer.Entities;
-using SİgnalR.DataAccsessLayer.Abstract;
+using SignalR.DataAccsessLayer.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace SİgnalR.DataAccsessLayer.Migrations
+namespace SignalR.DataAccsessLayer.Migrations
 {
     /// <inheritdoc />
     public partial class initialize : Migration

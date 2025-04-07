@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using SİgnalRwebUI.Dtos.TestimonialDtos;
+using SignalRwebUI.Dtos.TestimonialDtos;
 using System.Text;
 
-namespace SİgnalRwebUI.Controllers
+namespace SignalRwebUI.Controllers
 {
     public class TestimonialController : Controller
     {

@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SİgnalR.DataAccsessLayer\SİgnalR.DataAccsessLayer.csproj" />
+    <ProjectReference Include="..\SİgnalR.DataAccsessLayer\SignalR.DataAccsessLayer.csproj" />
   </ItemGroup>
 
 </Project>

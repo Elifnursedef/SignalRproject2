@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
-using SİgnalRwebUI.Dtos.CategoryDtos;
-using SİgnalRwebUI.Dtos.ProductDtos;
+using SignalRwebUI.Dtos.CategoryDtos;
+using SignalRwebUI.Dtos.ProductDtos;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SİgnalRwebUI.Controllers
+namespace SignalRwebUI.Controllers
 {
     public class ProductController : Controller
     {

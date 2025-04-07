@@ -1,6 +1,6 @@
 ﻿using SignalR.BusinessLayer.Abstract;
 using SignalR.EntiyLAyer.Entities;
-using SİgnalR.DataAccsessLayer.Abstract;
+using SignalR.DataAccsessLayer.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +40,11 @@ namespace SignalR.BusinessLayer.Concerte
         public List<Product> TGetProductswithcategories()
         {
             return _productDal.GetProductswithcategories();
+        }
+
+        public int TProductCount()
+        {
+            return _productDal.ProductCount();
         }
 
         public void TUpdate(Product entity)

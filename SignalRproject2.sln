@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRApi", "SignalRApi\SignalRApi.csproj", "{5526D1DF-1502-479F-A995-7C136AFD602E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SİgnalRwebUI", "SİgnalRwebUI\SİgnalRwebUI.csproj", "{90EEB7EE-D031-4D64-906D-CB47A11E8705}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRwebUI", "SİgnalRwebUI\SignalRwebUI.csproj", "{90EEB7EE-D031-4D64-906D-CB47A11E8705}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalREntitiyLayer", "SignalREntitiyLayer\SignalREntitiyLayer.csproj", "{3EC01BD5-6340-459B-9E87-200223A81DB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SİgnalR.DataAccsessLayer", "SİgnalR.DataAccsessLayer\SİgnalR.DataAccsessLayer.csproj", "{1D8CF81E-032A-4206-9CCD-0958200203C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.DataAccsessLayer", "SİgnalR.DataAccsessLayer\SignalR.DataAccsessLayer.csproj", "{1D8CF81E-032A-4206-9CCD-0958200203C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.DtoLayer", "SignalR.DtoLayer\SignalR.DtoLayer.csproj", "{F0D9CEC8-7F01-4E22-AFF4-9AFC40B489FD}"
 EndProject

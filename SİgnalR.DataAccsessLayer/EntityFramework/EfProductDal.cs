@@ -1,15 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SignalR.EntiyLAyer.Entities;
-using SİgnalR.DataAccsessLayer.Abstract;
-using SİgnalR.DataAccsessLayer.Concrete;
-using SİgnalR.DataAccsessLayer.Repositories;
+using SignalR.DataAccsessLayer.Abstract;
+using SignalR.DataAccsessLayer.Concrete;
+using SignalR.DataAccsessLayer.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SİgnalR.DataAccsessLayer.EntityFramework
+namespace SignalR.DataAccsessLayer.EntityFramework
 {
     public class EfProductDal : GenericRepository<Product>, IProductDal
     {
@@ -22,6 +22,12 @@ namespace SİgnalR.DataAccsessLayer.EntityFramework
             var context = new SignalRContext();
             var values = context.Products.Include(x => x.Category).ToList();
             return values;
+        }
+
+        public int ProductCount()
+        {
+            using var context = new SignalRContext();
+            return context.Products.Count();
         }
     }
 }

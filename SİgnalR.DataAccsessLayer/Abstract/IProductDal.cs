@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SİgnalR.DataAccsessLayer.Abstract
+namespace SignalR.DataAccsessLayer.Abstract
 {
     public interface IProductDal : IGenericDal<Product>
     {
         List<Product> GetProductswithcategories();
+        int ProductCount();
     }
 }

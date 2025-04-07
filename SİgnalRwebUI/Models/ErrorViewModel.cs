@@ -1,4 +1,4 @@
-namespace SİgnalRwebUI.Models
+namespace SignalRwebUI.Models
 {
     public class ErrorViewModel
     {

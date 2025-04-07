@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using SİgnalRwebUI.Dtos.AboutDtos;
-using SİgnalRwebUI.Dtos.CategoryDtos;
+using SignalRwebUI.Dtos.AboutDtos;
+using SignalRwebUI.Dtos.CategoryDtos;
 using System.Text;
 
-namespace SİgnalRwebUI.Controllers
+namespace SignalRwebUI.Controllers
 {
     public class AboutController : Controller
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SİgnalRwebUI.Dtos.SocialMediaDtos
+namespace SignalRwebUI.Dtos.SocialMediaDtos
 {
    public class UpdateSocialMediaDto
     {

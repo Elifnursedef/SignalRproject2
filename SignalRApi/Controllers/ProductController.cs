@@ -6,7 +6,7 @@ using SignalR.BusinessLayer.Abstract;
 using SignalR.DtoLayer.FeatureDto;
 using SignalR.DtoLayer.ProductDto;
 using SignalR.EntiyLAyer.Entities;
-using SİgnalR.DataAccsessLayer.Concrete;
+using SignalR.DataAccsessLayer.Concrete;
 
 namespace SignalRApi.Controllers
 {
@@ -29,6 +29,14 @@ namespace SignalRApi.Controllers
             var value = _mapper.Map<List<ResultProductDto>>(_productService.TGetListAll());
             return Ok(value);
         }
+        [HttpGet("ProductCount")]
+
+        public IActionResult ProductCount()
+        {
+            return Ok(_productService.TProductCount());
+        }
+
+
         [HttpGet("ProductListWithCategory")]
 
         public IActionResult ProductListWithCategory()
