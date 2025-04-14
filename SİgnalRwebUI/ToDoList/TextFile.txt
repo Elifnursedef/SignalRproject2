@@ -1,4 +1,25 @@
 ﻿--CategoryCount
---ProductCount
---Aktif Kategori Sayısı
---Pasif Kategori Sayısı
+--ProductCount --TProductCount
+--Aktif Kategori Sayısı ---TActiveCategoryCount
+--Pasif Kategori Sayısı ---TPassiveCategoryCount
+
+--Kategori ADına göre ürün sayıssı   hamburger kategorisi
+--Kategori ADına göre ürün sayıssı2 içecek kategorisi
+
+--ortalama ürün fiyatı ---TProductPriceAvg
+--en yüksek ürünlü fiyat ---TproductNameByMaxPrice
+--en düşük ürünlü fiyat ---TproductNameByMinPrice
+--ortalama hamburger fiyatı ---productavgpricebyhamburger
+
+--toplam siparii sayısı--totalordercount
+--aktif sipariş sayısı--activeordercount
+--son sipariş tuttaru-- lastorderprice
+--kasada ki tutar--  summoneycases
+--bugünkü kanzanç --todaytotalprice
+--masa sayısı -- MemuTable
+--
+
+
+------------------------------------------------------------
+
+İstatistiklerin Consume Edilmesi
